@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0">
+	<title>APP鼠要發紅包</title>
+	<link rel="stylesheet" href="css/style.css">	
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>	
+</head>
+<body>
+	    <!--header開始-->
+		<div class="header">
+			<a href="http://tw.shopping99.com/" target="_blank"><span><img src="images/logo.png" alt="SHOPPING99"></span></a>
+			<ul>
+				<a href="#"><li class="facebook">Facebook分享</li></a>
+				<a href="#"><li class="line">LINE分享</li></a>
+			</ul>
+		</div>
+		<!--header結束-->
+
+	    <!--主畫面區開始-->
+		<div class="box">
+		    <div class="box-d d1"><img src="images/box_01.jpg";></div>
+			<div class="box-d"><img src="images/box_02.gif"></div>
+			<div class="box-d d1"><img src="images/box_03.jpg"></div>
+		</div>
+		<!--主畫面區結束-->
+
+		<!--QR Code-->
+			 <div class="qrcode">
+			 	<div class="qr-d d1"><img src="images/box_04.jpg";></div>
+			 	<div class="qr-d"><img src="images/box_05.jpg"></div>
+			 	<div class="qr-d"><a href="#"><img src="images/box_06.jpg"></a></div>
+			 	<div class="qr-d"><a href="#"><img src="images/box_07.jpg"></a></div>
+			 	<div class="qr-d d1"><img src="images/box_08.jpg"></div>
+			 </div>
+		<!--QR Code結束-->
+
+
+
+	<div class="wrap">
+		
+
+		<!--活動詳情-->
+		<div class="content_1">
+			<h1>活動說明</h1>
+			<hr class="style-three"/> 
+			<h2>活動日期：即日起 ~ 2020/2/9 (日) 23:59</h2>
+			<ol>
+                <li>本活動大紅包為APP限定獨享優惠活動，<span class="focus">大紅包每會員(帳號) 限領取乙次。</span></li>
+                <li><span style="font-weight:bold;">大紅包領取資格和使用限制：</span>
+                  <ul>活動期間，SHOPPING99會員成功登入APP，系統將自動發送以下面額的購物券至會員APP中：</li>
+                  <li>● １張$65購物券，<span class="focus"><span style="font-weight:bold; text-decoration:underline;">APP不限消費金額</span></span>，可現折(SPA除外)。</li>
+                  <li>● １張$85購物券，<span class="focus"><span style="font-weight:bold; text-decoration:underline;">APP單筆消費滿(含)$699</span></span>，可現折(SPA除外)。</li>
+                  <li>● １張$100購物券，<span class="focus"><span style="font-weight:bold; text-decoration:underline;">APP單筆消費滿(含)$800</span></span>，可現折(SPA除外)。</li>
+                  <li>● １張$120購物券，<span class="focus"><span style="font-weight:bold; text-decoration:underline;">APP單筆消費滿(含)$999</span></span>，可現折(SPA除外)。</li>
+                  <li>● １張$150購物券，<span class="focus"><span style="font-weight:bold; text-decoration:underline;">APP單筆消費滿(含)$1200</span></span>，可現折(SPA除外)。</li>
+                  <li>以上購物券使用期限皆為：2020/3/1 (日) 23:59止。<span class="focus">舒壓SPA館課程恕不適用。</span>不能與其他優惠活動序號合併使用，單筆消費不能同時使用２張以上購物券。若事後取消訂單或辦理退貨，此購物券則視為使用過，不再補發，且僅會退還您實際所支付的金額。</li>
+                </ul>                   
+                  
+                <li>如本活動因不可抗拒力之特殊原因無法執行時，SHOPPING99有權決定取消、終止、修改或暫停本活動。任何活動規則以SHOPPING99最新公佈為準，本公司保留修改活動規則與內容權利。</li>
+                <li>參與本活動請更新SHOPPING99 APP 的版本，安卓版本(Android 1.0.51以上)或iPhone版本(iOS 2.6.26以上) 。</li>
+                <li>參與本活動須使用具備安卓系統(Android OS 4.0.3以上)或iPhone系統(iOS 8.0以上)之智慧手機。</li>
+            </ol>
+        </br>
+        </br>
+		</div>
+
+<!-- 回到頂端按鈕 start -->
+<script>
+//<![CDATA[
+(function () {
+$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");top
+var img = "images/top.png",
+locatioin = 4.5/5, // 按鈕出現在螢幕的高度
+right = 0, // 距離右邊 px 值
+opacity = 0.4, // 透明度
+speed = 500, // 捲動速度
+$button = $("#goTopButton"),
+$body = $(document),
+$win = $(window);
+$button.attr("src", img);
+$button.on({
+mouseover: function() {$button.css("opacity", 1);},
+mouseout: function() {$button.css("opacity", opacity);},
+click: function() {$("html, body").animate({scrollTop: 0}, speed);}
+});
+window.goTopMove = function () {
+var scrollH = $body.scrollTop(),
+winH = $win.height(),
+css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
+if(scrollH > 20) {
+$button.css(css);
+$button.fadeIn("slow");
+} else {
+$button.fadeOut("slow");
+}
+};
+$win.on({
+scroll: function() {goTopMove();},
+resize: function() {goTopMove();}
+});
+} )();
+//]]>
+</script>
+<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+
+
+</body>
+</html>

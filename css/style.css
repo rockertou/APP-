@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS reset end */
+
+
+
+body {
+	background-color: #db2223;
+	background-image: url(../images/bg.png); 
+	background-position: center top; 
+	background-repeat: repeat;
+	background-size: 100%;
+}
+
+
+
+/*header開始*/
+.header{
+	width: 100%;
+	background: #;
+}
+.header img{
+	width: auto;
+	height: 60px;
+	margin: 8px 20px; 
+}
+.header ul{
+	float: right;
+	line-height: 50px;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+.header ul li{
+	display: inline-block;
+	margin-right: 5px;
+	text-align: center;
+	width: 220px;
+	font-family: 微軟正黑體;
+	font-size: 22px;
+	color: #FFF;
+}
+.line{
+	background: #00c300;
+	border-radius:10px;
+}
+.facebook{
+	background: #3b5998;
+	border-radius:10px;
+}
+
+@media (max-width:1024px){
+	.header{
+	width: 100%;
+}
+.header img{
+	width: auto;
+	height: 40px;
+	margin: 10px 10px;
+}
+.header ul{
+	float: right;
+	line-height: 40px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.header ul li{
+	display: inline-block;
+	margin-right: 5px;
+	text-align: center;
+	width: 140px;
+	font-size: 16px;
+}
+}
+
+@media (max-width:568px){
+.header{
+	width: 100%;
+}
+.header img{
+	width: auto;
+	height: 7vw;
+	margin: 10px 10px; 
+}
+.header ul{
+	float: right;
+	line-height: 30px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.header ul li{
+	display: inline-block;
+	margin-right: 5px;
+	text-align: center;
+	width: 27vw;
+	font-size: 12px;
+}
+.line{
+	border-radius:8px;
+}
+.facebook{
+	border-radius:8px;
+}
+}
+
+/*header結束*/
+
+/*box開始*/
+.box {
+	display: flex;
+}
+.box img{
+	width: 100%;
+	vertical-align:top;
+}
+@media (max-width:768px){
+    .box-d.d1 {
+		display: none;
+	}
+}
+@media (max-width:568px){
+    .box-d.d1 {
+		display: none;
+	}
+}
+
+
+/*QRcode開始*/
+.qrcode {
+	display: flex;
+}
+.qrcode img{
+	width: 100%;
+}
+
+@media (max-width:768px){
+     .qr-d.d1 {
+		display: none;
+	}
+}
+@media (max-width:568px){
+    .qr-d.d1 {
+		display: none;
+	}
+}
+
+/*box結束*/
+
+
+.wrap{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/*content_1開始*/
+.content_1{
+	max-width: 100%;
+}
+.content_1 h1{
+	display: block;
+	font-family: 微軟正黑體;
+	font-size: 5vmin;
+	color: #fcecb3;
+	text-align: center;
+	font-weight: bold; 
+	padding: 10px;
+	margin: 20px 0 10px 0px;
+}
+hr.style-three {
+    border: 0;
+    border-bottom: 1px dashed #fff;
+    background: #;
+}
+.content_1 h2{
+	display: block;
+	font-family: 微軟正黑體;
+	font-size: 4vmin;
+	color: #fcecb3;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	margin: 5px;
+}
+.content_1 ol{
+	margin: 10px;
+	padding-left: 20px;
+	list-style-type:decimal;
+}
+.content_1 li{
+	color: #ffffff;
+	padding:auto; 
+	margin: 15px 0px 10px 2px; /*上右下左*/ 
+	line-height: 160%; /* 設定文字行距 */
+	font-family: sans-serif, Microsoft JhengHei; text-align:left;
+}
+.focus{
+	color: #fcecb3;
+	
+}
+
+
+
+/*content_1結束*/
+
+
+
+
+
+
+
